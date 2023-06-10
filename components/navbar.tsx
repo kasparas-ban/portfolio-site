@@ -13,7 +13,7 @@ const navItems = {
 }
 
 export default function Navbar() {
-  //TEST 5
+  //TEST 6
 
   return (
     <nav className="flex flex-row gap-3 bg-red-400 max-md:justify-center md:flex-col">
