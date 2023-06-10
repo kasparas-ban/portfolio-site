@@ -13,6 +13,7 @@ const navItems = {
 }
 
 export default function Navbar() {
+  // TEST
   return (
     <nav className="flex flex-row gap-3 bg-red-400 max-md:justify-center md:flex-col">
       <Link href="/" className="block">
