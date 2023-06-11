@@ -1,12 +1,17 @@
 import clsx from 'clsx'
-import { Merriweather } from 'next/font/google'
+import { Lora, Merriweather } from 'next/font/google'
 import Navbar from '@/components/navbar'
 import './globals.css'
 
-const font = Merriweather({
+const titleFont = Merriweather({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-merriweather',
+})
+
+const mainFont = Lora({
+  subsets: ['latin'],
+  variable: '--font-lora',
 })
 
 export const metadata = {
@@ -22,11 +27,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={clsx('bg-white text-black dark:bg-[#111010]', font.variable)}
+      className={clsx(
+        'bg-white text-black dark:bg-[#111010]',
+        titleFont.variable,
+        mainFont.variable
+      )}
     >
-      <body className="mx-auto mb-40 mt-8 flex max-w-3xl flex-col px-4 antialiased md:mt-20 md:flex-row lg:mt-32">
+      <body className="mx-auto mb-40 mt-8 flex max-w-3xl flex-col gap-12 px-4 antialiased md:mt-20 md:flex-row lg:mt-32">
         <Navbar />
-        <main className="w-full bg-blue-500">
+        <main className="w-full">
           {children}
           {/* <Analytics /> */}
         </main>
