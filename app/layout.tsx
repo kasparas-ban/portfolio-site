@@ -28,12 +28,12 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'bg-white text-black dark:bg-[#111010]',
+        'bg-white [scrollbar-gutter:stable] text-black dark:bg-[#111010]',
         titleFont.variable,
         mainFont.variable
       )}
     >
-      <body className="mx-auto mb-40 mt-8 flex max-w-3xl flex-col gap-12 px-4 antialiased md:mt-20 md:flex-row lg:mt-32">
+      <body className="mx-auto mb-40 mt-8 flex max-w-2xl flex-col gap-12 px-4 antialiased md:mt-20 md:flex-row lg:mt-32">
         <Navbar />
         <main className="w-full">
           {children}
