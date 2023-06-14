@@ -18,7 +18,8 @@ export default async function Home() {
         things on the side.
       </p>
       <p className="">
-        You are <span className="mx-1 text-3xl">{visitorCount}</span>th visitor.
+        You are <span className="mr-0.5 text-3xl">{visitorCount}</span>th
+        visitor.
       </p>
       {/* <h5 className="mb-2 text-xl">Contact</h5>
       <ContactForm /> */}

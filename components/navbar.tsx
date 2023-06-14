@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className="flex flex-row gap-3 md:flex-col">
+    <nav className="flex flex-row gap-3 font-semibold md:flex-col">
       <Link href="/" className="block">
         Home
       </Link>
