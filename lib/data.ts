@@ -1,6 +1,6 @@
 export const experienceData: WorkExperience[] = [
   {
-    title: 'Front-End Developer',
+    title: 'Frontend Developer',
     company: 'Horion Digital',
     period: 'Feb 2023 - Now',
     duration: '4 months',
@@ -24,13 +24,13 @@ export const experienceData: WorkExperience[] = [
     ],
   },
   {
-    title: 'Junior Front-End Developer',
+    title: 'Junior Frontend Developer',
     company: 'Unify Square',
     period: 'Oct 2021 - Aug 2022',
     duration: '11 mos',
     description: [
       'I worked on the PowerSuite app - a monitoring tool used by large corporations to manage communications between their employees.',
-      'I was tasked to develop new front-end features, such as tables, forms, form validation, and various monitoring info pages in an extensive codebase.',
+      'I was tasked to develop new frontend features, such as tables, forms, form validation, and various monitoring info pages in an extensive codebase.',
       'Used Typescript, React, SCSS, Reactstrap, as well as custom UI libraries.',
     ],
   },
