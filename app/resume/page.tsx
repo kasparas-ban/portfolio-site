@@ -41,8 +41,8 @@ function WorkExperience({ work }: { work: WorkExperience }) {
       </div>
       <div className="font-medium dark:text-gray-200">{work.company}</div>
       <ul className="space-y-2 text-justify text-gray-500 mt-3 list-disc list-inside dark:text-gray-400">
-        {work.description.map(bullet => (
-          <li>{bullet}</li>
+        {work.description.map((bullet, idx) => (
+          <li key={idx}>{bullet}</li>
         ))}
       </ul>
     </div>
