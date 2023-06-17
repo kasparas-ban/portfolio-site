@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <nav className="flex flex-row gap-3 font-semibold md:flex-col">
       {links.map(link => (
-        <Link href={link.href} className={clsx("block w-fit border-b-2 dark:text-gray-300", pathname === link.href ? "border-gray-500 dark:border-gray-200" : 'border-white dark:border-[#111010]')}>
+        <Link href={link.href} key={link.href} className={clsx("block w-fit border-b-2 dark:text-gray-300", pathname === link.href ? "border-gray-500 dark:border-gray-200" : 'border-white dark:border-[#111010]')}>
           {link.name}
         </Link>
       ))}

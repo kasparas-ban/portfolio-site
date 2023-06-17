@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div className="flex flex-col justify-between">
       <h1 className="mb-1 font-title text-4xl font-bold dark:text-gray-300">Resume</h1>
-      <p className="mb-4 dark:text-gray-300">Last updated: Jun 2023</p>
+      <p className="mb-4 dark:text-gray-300 text-sm">Last updated: Jun 2023</p>
 
       <div className="inline-flex w-full mb-4 items-center justify-center">
         <hr className="my-8 h-px w-full border-0 bg-gray-200 dark:bg-gray-700" />
