@@ -20,10 +20,10 @@ function ProjectCard({ project }: { project: ProjectData }) {
       {/* <img className="object-cover w-full rounded-t-lg h-32 md:h-32 md:w-48 md:rounded-none md:rounded-l-lg" src="https://picsum.photos/id/237/200/300" alt="" /> */}
       <div className="flex flex-col justify-between p-4 leading-normal">
         <div className='flex flex-col sm:flex-row mb-2'>
-          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-title">
             {project.title}
           </h5>
-          {project.inProgress && <span className='h-fit w-fit mt-1 text-center border border-gray-300 text-gray-600 sm:ml-3 dark:text-gray-200 text-xs font-semibold rounded-md px-2 py-1'>in progress</span>}
+          {project.inProgress && <span className='h-fit w-fit mt-0.5 text-center border border-gray-300 text-gray-600 sm:ml-3 dark:text-gray-200 text-xs font-semibold rounded-md px-2 py-1'>in progress</span>}
         </div>
         <p
           className={clsx(

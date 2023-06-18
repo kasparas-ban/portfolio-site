@@ -12,13 +12,13 @@ export default async function Home() {
   return (
     <div className="flex flex-col justify-between">
       <h1 className="font-title text-4xl font-bold dark:text-gray-200">Kasparas Baniulis</h1>
-      <p className="mb-4 text-2xl dark:text-gray-200">Frontend developer</p>
+      <p className="mb-4 font-title text-lg font-medium dark:text-gray-200">Frontend developer</p>
       <p className="mb-8 dark:text-gray-400">
         Hi, I&apos;m Kasparas. I do frontend work for a living and many other
         things on the side.
       </p>
       <p className="dark:text-gray-400">
-        You are <span className="mr-0.5 text-3xl dark:text-gray-300">{visitorCount}</span>th
+        You are <span className="mr-0.5 text-3xl dark:text-gray-300 font-title">{visitorCount}</span>th
         visitor.
       </p>
       {/* <h5 className="mb-2 text-xl">Contact</h5>
