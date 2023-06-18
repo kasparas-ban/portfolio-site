@@ -6,7 +6,7 @@ export const experienceData: WorkExperience[] = [
     duration: '4 months',
     description: [
       'Worked on multiple projects: on an app that helps an IT business to communicate with their clients, and on a platform for influencer campaign management that helps to validate the business impact of influencer marketing.',
-      'Took part in application design, development, and requirement facilitation',
+      'Took part in application design, development, and requirement facilitation.',
       'Communicated with different developer teams to ensure quality and to meet aggressive deadlines.',
       'Used React, Redux Toolkit, Node.js, SCSS, and Styled Components.',
     ],
