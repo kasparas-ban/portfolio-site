@@ -1,14 +1,6 @@
-import { getVisitorCount } from '@/lib/metrics'
-
-export const revalidate = 60
+import VisitorCounter from './VisitorCounter'
 
 export default async function Home() {
-  let visitorCount
-
-  await getVisitorCount()
-    .then((res) => (visitorCount = res))
-    .catch((e) => console.error(e))
-
   return (
     <div className="flex flex-col justify-between">
       <h1 className="font-title text-4xl font-bold dark:text-gray-200">Kasparas Baniulis</h1>
@@ -17,10 +9,7 @@ export default async function Home() {
         Hi, I&apos;m Kasparas. I do frontend work for a living and many other
         things on the side.
       </p>
-      <p className="dark:text-gray-400">
-        You are <span className="mr-0.5 text-3xl dark:text-gray-300 font-title">{visitorCount}</span>th
-        visitor.
-      </p>
+      <VisitorCounter />
       {/* <h5 className="mb-2 text-xl">Contact</h5>
       <ContactForm /> */}
     </div>

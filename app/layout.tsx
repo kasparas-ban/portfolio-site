@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { Lora, Merriweather } from 'next/font/google'
+import { Merriweather } from 'next/font/google'
 import Navbar from '@/components/navbar'
 import './globals.css'
 
