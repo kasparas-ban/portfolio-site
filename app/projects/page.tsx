@@ -1,5 +1,11 @@
 import clsx from 'clsx'
+import { Metadata } from 'next';
 import { projectsData } from '@/lib/data'
+
+export const metadata: Metadata = {
+  title: 'Projects',
+  description: "Previous projects I've worked on.",
+};
 
 export default function Page() {
   return (
@@ -17,7 +23,6 @@ export default function Page() {
 function ProjectCard({ project }: { project: ProjectData }) {
   return (
     <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-600 dark:bg-gray-800">
-      {/* <img className="object-cover w-full rounded-t-lg h-32 md:h-32 md:w-48 md:rounded-none md:rounded-l-lg" src="https://picsum.photos/id/237/200/300" alt="" /> */}
       <div className="flex flex-col justify-between p-4 leading-normal">
         <div className='flex flex-col sm:flex-row mb-2'>
           <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-title">

@@ -1,4 +1,10 @@
 import { experienceData } from "@/lib/data"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Resume',
+  description: 'Previous work experience.',
+};
 
 export default function Page() {
   return (

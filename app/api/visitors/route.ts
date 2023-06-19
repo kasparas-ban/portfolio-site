@@ -1,6 +1,6 @@
 import { getVisitorCount } from '@/lib/metrics'
  
-export async function GET() { 
+export async function GET() {
   const count = await getVisitorCount()
 
   const res = new Response(JSON.stringify({ count }), {
