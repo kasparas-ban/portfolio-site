@@ -49,7 +49,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'bg-white [scrollbar-gutter:stable] text-black dark:bg-[#111010] h-full',
+        'bg-white text-black dark:bg-[#111010] h-full',
         titleFont.variable
       )}
     >
@@ -60,7 +60,7 @@ export default function RootLayout({
             {children}
           </div>
           {/* <Analytics /> */}
-          <footer className="text-center pb-4 font-title text-gray-500 text-xs mt-auto">
+          <footer className="text-center pb-6 font-title text-gray-500 text-xs mt-auto">
             Made in 2023
           </footer>
         </main>

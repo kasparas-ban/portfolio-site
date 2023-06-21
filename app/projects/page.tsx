@@ -23,7 +23,7 @@ export default function Page() {
 function ProjectCard({ project }: { project: ProjectData }) {
   return (
     <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl dark:border-gray-600 dark:bg-gray-800">
-      <div className="flex flex-col justify-between p-4 leading-normal">
+      <div className="flex flex-col justify-between p-4 pb-3 leading-normal">
         <div className='flex flex-col sm:flex-row mb-2'>
           <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white font-title">
             {project.title}

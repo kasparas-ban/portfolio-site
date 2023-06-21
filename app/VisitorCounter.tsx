@@ -28,10 +28,10 @@ function getNumberEnding(count: number) {
   if (count.toString().at(-1) === '1') {
     return 'st'
   }
-  if (count.toString().at(-2) === '1') {
+  if (count.toString().at(-2) === '2') {
     return 'nd'
   }
-  if (count.toString().at(-1) === '1') {
+  if (count.toString().at(-1) === '3') {
     return 'rd'
   }
   return 'th'

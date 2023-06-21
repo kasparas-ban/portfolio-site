@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <nav className="flex flex-row gap-3 font-semibold md:flex-col font-title">
       {links.map(link => (
-        <Link href={link.href} key={link.href} className={clsx("block w-fit border-b-2 hover:text-gray-700 text-gray-500 dark:text-gray-300", pathname === link.href ? "text-gray-800 border-gray-500 dark:border-gray-200" : 'border-white dark:border-[#111010]')}>
+        <Link href={link.href} key={link.href} className={clsx("block w-fit border-b-2 text-gray-500 dark:text-gray-400", pathname === link.href ? "text-gray-800 border-gray-500 dark:border-gray-200 dark:text-gray-100 dark:hover:text-gray-100" : 'border-white dark:border-[#111010] hover:text-gray-700 dark:hover:text-gray-500')}>
           {link.name}
         </Link>
       ))}

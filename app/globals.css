@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --ratio: 3.74;
+}
+
 html {
     color: #393939;
+}
+
+dialog {
+    border-radius: calc(5px * var(--ratio));
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 6px 12px -3px rgba(0, 0, 0, 0.1);
+    padding: 1.6rem;
+    width: min(400px, 100%);
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(2px);
 }
