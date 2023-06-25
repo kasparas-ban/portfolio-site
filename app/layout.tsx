@@ -53,17 +53,19 @@ export default function RootLayout({
         titleFont.variable
       )}
     >
-      <body className="flex flex-col md:flex-row gap-12 mx-auto pt-8 max-w-2xl px-4 antialiased md:pt-20 lg:pt-32 h-full">
-        <Navbar />
-        <main className="w-full flex flex-col">
-          <div className='mb-20'>
-            {children}
-          </div>
-          {/* <Analytics /> */}
-          <footer className="text-center pb-6 font-title text-gray-500 text-xs mt-auto">
-            Made in 2023
-          </footer>
-        </main>
+      <body className="dark:bg-[#111010] min-h-screen">
+        <div className='flex flex-col md:flex-row gap-12 mx-auto max-w-2xl pt-8 px-4 antialiased md:pt-20 lg:pt-32 h-full min-h-[inherit]'>
+          <Navbar />
+          <main className="w-full flex flex-col">
+            <div className='mb-20'>
+              {children}
+            </div>
+            {/* <Analytics /> */}
+            <footer className="text-center pb-6 font-title text-gray-500 text-xs mt-auto">
+              Made in 2023
+            </footer>
+          </main>
+        </div>
       </body>
     </html>
   )
