@@ -62,6 +62,59 @@ export const experienceData: WorkExperience[] = [
 
 export const projectsData: ProjectData[] = [
   {
+    title: 'Torch: A React Native App',
+    description:
+      'Tracks the time you spend pursuing your goals. Includes a Pomodoro timer and various visual aids to track your progress.',
+    image: '',
+    techUsed: ['React Native', 'Reanimated'],
+    githubLink: 'https://github.com/kasparas-ban/torch',
+    inProgress: true,
+  },
+  {
+    title: 'Torch: Rewritten in Next.js',
+    description: 'Same Torch app rewritten in Next.js',
+    image: '',
+    techUsed: [
+      'Next.js',
+      'TailwindCSS',
+      'Framer Motion',
+      'React Query',
+      'shadcn/ui',
+      'Zustand',
+      'Clerk.js',
+    ],
+    githubLink: 'https://github.com/kasparas-ban/torch-nextjs',
+    projectLink: 'https://torch-app.com',
+    inProgress: true,
+    isPrivate: true,
+  },
+  {
+    title: 'Torch: goal tracking web app',
+    description:
+      'Tracks the time you spend pursuing your goals. Includes a Pomodoro timer and various visual aids to track your progress.',
+    image: '',
+    techUsed: ['React', 'TailwindCSS', 'Framer Motion', 'React Query'],
+    githubLink: 'https://github.com/kasparas-ban/torch',
+  },
+  {
+    title: 'Torch API server',
+    description:
+      'Tracks the time you spend pursuing your goals. Includes a Pomodoro timer and various visual aids to track your progress.',
+    image: '',
+    techUsed: ['Go', 'Gin', 'testcontainers', 'Docker'],
+    githubLink: 'https://github.com/kasparas-ban/torch-server',
+    isPrivate: true,
+  },
+  {
+    title: 'Torch DevOps',
+    description:
+      'Spins up all the neccessary resources for the Torch API server on AWS.',
+    image: '',
+    techUsed: ['AWS', 'Terraform', 'EC2', 'RDS'],
+    githubLink: 'https://github.com/kasparas-ban/torch-devops',
+    inProgress: true,
+  },
+  {
     title: 'Personal website',
     description:
       'A beautifully designed, simple, minimalistic, responsive, dark-mode compatible personal website. You\'re looking at it now. Totally not copied from <a href="https://github.com/leerob/leerob.io" target="__blank">leerob.</a>',
@@ -69,16 +122,6 @@ export const projectsData: ProjectData[] = [
     techUsed: ['Next.js', 'TailwindCSS', 'PlanetScale', 'Vercel'],
     githubLink: 'https://github.com/kasparas-ban/portfolio-site',
     projectLink: '/',
-    inProgress: true,
-  },
-  {
-    title: 'Torch: goal tracking web app',
-    description:
-      'Tracks the time you spend pursuing your goals. Includes a Pomodoro timer and various visual aids to track your progress.',
-    image: '',
-    techUsed: ['React', 'TailwindCSS', 'Framer Motion'],
-    githubLink: 'https://github.com/kasparas-ban/torch',
-    inProgress: true,
   },
   {
     title: 'Bluedot authentication server',

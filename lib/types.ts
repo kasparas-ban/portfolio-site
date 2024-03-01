@@ -14,4 +14,5 @@ interface ProjectData {
   githubLink: string
   projectLink?: string
   inProgress?: boolean
+  isPrivate?: boolean
 }
