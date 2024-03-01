@@ -1,11 +1,11 @@
 'use client'
 
-import { useEffect, useState } from 'react';
-import "@theme-toggles/react/css/Classic.css"
-import { Classic } from "@theme-toggles/react"
-import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react'
+import '@theme-toggles/react/css/Classic.css'
+import { Classic } from '@theme-toggles/react'
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import clsx from 'clsx';
+import clsx from 'clsx'
 
 const links = [
   {
@@ -23,19 +23,19 @@ const links = [
 ]
 
 export default function Navbar() {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   return (
-    <nav className="flex flex-row gap-3 font-semibold md:flex-col font-title">
-      {links.map(link => (
+    <nav className="flex flex-row gap-3 font-title font-semibold md:flex-col">
+      {links.map((link) => (
         <Link
           href={link.href}
           key={link.href}
           className={clsx(
-            "block w-fit border-b-2",
+            'block w-fit border-b-2',
             pathname === link.href
-              ? "text-gray-800 border-gray-500 dark:border-gray-200 dark:text-gray-100 dark:hover:text-gray-100"
-              : 'text-gray-400 dark:text-gray-400 border-white dark:border-[#111010] hover:text-gray-700 dark:hover:text-gray-300'
+              ? 'border-gray-500 text-gray-800 dark:border-gray-200 dark:text-gray-100 dark:hover:text-gray-100'
+              : 'border-white text-gray-400 hover:text-gray-700 dark:border-[#111010] dark:text-gray-400 dark:hover:text-gray-300'
           )}
         >
           {link.name}
@@ -47,7 +47,12 @@ export default function Navbar() {
 }
 
 function ThemeToggle() {
-  const systemTheme = window?.matchMedia?.('(prefers-color-scheme:dark)')?.matches ? 'dark' : 'light'
+  const systemTheme =
+    typeof window !== 'undefined'
+      ? window.matchMedia?.('(prefers-color-scheme:dark)')?.matches
+        ? 'dark'
+        : 'light'
+      : undefined
   const [theme, setTheme] = useState(systemTheme || 'light')
 
   useEffect(() => {
@@ -59,9 +64,13 @@ function ThemeToggle() {
   }, [theme])
 
   const handleToggle = () =>
-    setTheme(prev => prev === 'light' ? 'dark' : 'light')
+    setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
 
   return (
-    <Classic toggled={theme !== 'dark'} toggle={handleToggle} className="text-gray-400 w-fit flex ml-auto hover:text-gray-700 dark:text-gray-400 hover:dark:text-gray-100 [&_svg]:h-8 [&_svg]:w-8 md:mx-auto" />
+    <Classic
+      toggled={theme !== 'dark'}
+      toggle={handleToggle}
+      className="ml-auto flex w-fit text-gray-400 hover:text-gray-700 dark:text-gray-400 hover:dark:text-gray-100 md:mx-auto [&_svg]:h-8 [&_svg]:w-8"
+    />
   )
 }

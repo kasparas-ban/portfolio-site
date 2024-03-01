@@ -53,7 +53,7 @@ export const experienceData: WorkExperience[] = [
     description: [
       'I was tasked on creating an app for Android phones that was to be published on Google Play Store.',
       'Given a broad description of the functionality the app would need to have, I was responsible for the technical feasibility assessment, full development of the code, architectural and visual design of the app.',
-      "All the development and research were done independently.",
+      'All the development and research were done independently.',
       'Functionalities of the app included: precise drawing of simple shapes using Android Canvas API, saving and storing the drawn shapes in memory where they could later be accessed and edited, superposing the shapes on an active camera image, including manual control sliders to adjust camera focus and zoom.',
       'The app was finished, all the requested features were implemented and presented to the customer.',
     ],
@@ -63,7 +63,8 @@ export const experienceData: WorkExperience[] = [
 export const projectsData: ProjectData[] = [
   {
     title: 'Personal website',
-    description: "A beautifully designed, simple, minimalistic, responsive, dark-mode compatible personal website. You're looking at it now. Totally not copied from <a href=\"https://github.com/leerob/leerob.io\" target=\"__blank\">leerob.</a>",
+    description:
+      'A beautifully designed, simple, minimalistic, responsive, dark-mode compatible personal website. You\'re looking at it now. Totally not copied from <a href="https://github.com/leerob/leerob.io" target="__blank">leerob.</a>',
     image: '',
     techUsed: ['Next.js', 'TailwindCSS', 'PlanetScale', 'Vercel'],
     githubLink: 'https://github.com/kasparas-ban/portfolio-site',
@@ -72,7 +73,8 @@ export const projectsData: ProjectData[] = [
   },
   {
     title: 'Torch: goal tracking web app',
-    description: "Tracks the time you spend pursuing your goals. Includes a Pomodoro timer and various visual aids to track your progress.",
+    description:
+      'Tracks the time you spend pursuing your goals. Includes a Pomodoro timer and various visual aids to track your progress.',
     image: '',
     techUsed: ['React', 'TailwindCSS', 'Framer Motion'],
     githubLink: 'https://github.com/kasparas-ban/torch',
@@ -80,42 +82,55 @@ export const projectsData: ProjectData[] = [
   },
   {
     title: 'Bluedot authentication server',
-    description: "An authentication server that handles sign-up, confirmation email sending, sign-in, sign-out, and password reset. Uses session-based authentication.",
+    description:
+      'An authentication server that handles sign-up, confirmation email sending, sign-in, sign-out, and password reset. Uses session-based authentication.',
     image: '',
     techUsed: ['Go', 'Redis', 'MySQL', 'Docker'],
     githubLink: 'https://github.com/kasparas-ban/jwt-auth',
   },
   {
     title: 'Bluedot dashboard',
-    description: "Frontend interface for the Bluedot social network. Has an interactive globe from iTowns library and various animated panels for information display.",
+    description:
+      'Frontend interface for the Bluedot social network. Has an interactive globe from iTowns library and various animated panels for information display.',
     image: '',
-    techUsed: ['React', 'iTowns', 'SCSS', 'Framer Motion', 'Zustand', 'React Query'],
+    techUsed: [
+      'React',
+      'iTowns',
+      'SCSS',
+      'Framer Motion',
+      'Zustand',
+      'React Query',
+    ],
     githubLink: 'https://github.com/kasparas-ban/dashboard-frontend',
   },
   {
     title: 'Bluedot sign-up/sign-in app',
-    description: "Frontend interface for sign-up, sign-in, and password reset. Made to work together with <a href=\"https://github.com/kasparas-ban/jwt-auth\" target=\"__blank\">Bluedot authentication server</a>.",
+    description:
+      'Frontend interface for sign-up, sign-in, and password reset. Made to work together with <a href="https://github.com/kasparas-ban/jwt-auth" target="__blank">Bluedot authentication server</a>.',
     image: '',
     techUsed: ['React', 'SCSS', 'React Hook Form', 'Framer Motion'],
     githubLink: 'https://github.com/kasparas-ban/jwt-auth',
   },
   {
     title: 'Authentication server',
-    description: "An authentication server that handles sign-up, confirmation email sending, sign-in, sign-out, and password reset. Uses JWT-based authentication.",
+    description:
+      'An authentication server that handles sign-up, confirmation email sending, sign-in, sign-out, and password reset. Uses JWT-based authentication.',
     image: '',
     techUsed: ['Node.js', 'Express.js', 'MongoDB'],
     githubLink: 'https://github.com/kasparas-ban/auth-server',
   },
   {
     title: 'aruodas.lt scrapper',
-    description: "Used to routinely scrape newest listings from aruodas.lt and display them on a nice frontend interface.",
+    description:
+      'Used to routinely scrape newest listings from aruodas.lt and display them on a nice frontend interface.',
     image: '',
     techUsed: ['Node.js', 'React', 'Puppeteer', 'SCSS', 'Firebase', 'Heroku'],
     githubLink: 'https://github.com/kasparas-ban/aruodas-scrapper',
   },
   {
     title: 'Personal blog',
-    description: "Frontend and backend for a personal blog app. Has a nice design and the function to sort articles according to their category.",
+    description:
+      'Frontend and backend for a personal blog app. Has a nice design and the function to sort articles according to their category.',
     image: '',
     techUsed: ['Node.js', 'Express.js', 'React', 'SCSS', 'MongoDB'],
     githubLink: 'https://github.com/kasparas-ban/Personal-Blog',
@@ -123,17 +138,20 @@ export const projectsData: ProjectData[] = [
   },
   {
     title: 'Primitive ray tracer',
-    description: "A simple ray tracer implemented from scratch using Rust. I wrote an equivalent ray tracer in golang as well - you can find it <a href=\"https://github.com/kasparas-ban/ray-tracer\" target=\"__blank\">here</a>.",
+    description:
+      'A simple ray tracer implemented from scratch using Rust. I wrote an equivalent ray tracer in golang as well - you can find it <a href="https://github.com/kasparas-ban/ray-tracer" target="__blank">here</a>.',
     image: '',
     techUsed: ['Rust'],
     githubLink: 'https://github.com/kasparas-ban/rust_ray_tracer',
   },
   {
     title: 'Rick and Morty Character Database',
-    description: "A simple frontend app that allows you to view information on the characters of the Rick and Morty show. Uses open <a href=\"https://rickandmortyapi.com\" target=\"__blank\">API</a> for data loading.",
+    description:
+      'A simple frontend app that allows you to view information on the characters of the Rick and Morty show. Uses open <a href="https://rickandmortyapi.com" target="__blank">API</a> for data loading.',
     image: '',
     techUsed: ['React', 'SCSS'],
     githubLink: 'https://github.com/kasparas-ban/rick-morty-character-database',
-    projectLink: 'https://kasparas-ban.github.io/rick-morty-character-database/',
+    projectLink:
+      'https://kasparas-ban.github.io/rick-morty-character-database/',
   },
 ]

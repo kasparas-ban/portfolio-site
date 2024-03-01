@@ -2,15 +2,15 @@ import { Kysely } from 'kysely'
 import { PlanetScaleDialect } from 'kysely-planetscale'
 
 interface VisitorsTable {
-    count: number
+  count: number
 }
 
 interface Database {
-    visitors: VisitorsTable
+  visitors: VisitorsTable
 }
 
 export const queryBuilder = new Kysely<Database>({
-    dialect: new PlanetScaleDialect({
-        url: process.env.DATABASE_URL,
-    })
+  dialect: new PlanetScaleDialect({
+    url: process.env.DATABASE_URL,
+  }),
 })

@@ -7,11 +7,11 @@ interface WorkExperience {
 }
 
 interface ProjectData {
-  title: string,
-  description: string,
-  techUsed: string[],
-  image?: string,
-  githubLink: string,
-  projectLink?: string,
+  title: string
+  description: string
+  techUsed: string[]
+  image?: string
+  githubLink: string
+  projectLink?: string
   inProgress?: boolean
 }

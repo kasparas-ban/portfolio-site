@@ -49,19 +49,17 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'bg-white text-black dark:bg-[#111010] h-full',
+        'h-full bg-white text-black dark:bg-[#111010]',
         titleFont.variable
       )}
     >
-      <body className="dark:bg-[#111010] min-h-screen">
-        <div className='flex flex-col md:flex-row gap-12 mx-auto max-w-2xl pt-8 px-4 antialiased md:pt-20 lg:pt-32 h-full min-h-[inherit]'>
+      <body className="min-h-screen dark:bg-[#111010]">
+        <div className="mx-auto flex h-full min-h-[inherit] max-w-2xl flex-col gap-12 px-4 pt-8 antialiased md:flex-row md:pt-20 lg:pt-32">
           <Navbar />
-          <main className="w-full flex flex-col">
-            <div className='mb-20'>
-              {children}
-            </div>
+          <main className="flex w-full flex-col">
+            <div className="mb-20">{children}</div>
             {/* <Analytics /> */}
-            <footer className="text-center pb-6 font-title text-gray-500 text-xs mt-auto">
+            <footer className="mt-auto pb-6 text-center font-title text-xs text-gray-500">
               Made in 2023
             </footer>
           </main>

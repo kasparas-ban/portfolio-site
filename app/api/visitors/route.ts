@@ -1,5 +1,5 @@
 import { getVisitorCount } from '@/lib/metrics'
- 
+
 export async function GET() {
   const count = await getVisitorCount()
 

@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer"
+import nodemailer from 'nodemailer'
 
 interface EmailPayload {
   subject: string
@@ -7,7 +7,7 @@ interface EmailPayload {
 
 const smtpOptions = {
   host: process.env.SMTP_HOST,
-  port: parseInt(process.env.SMTP_PORT || "2525"),
+  port: parseInt(process.env.SMTP_PORT || '2525'),
   secure: true,
   auth: {
     user: process.env.SMTP_USER,
